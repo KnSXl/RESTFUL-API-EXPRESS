@@ -6,19 +6,20 @@ const consign = require('consign');
 module.exports = () => {
     const app = express();
 
-    // SETANDO VARIÁVEIS DA APLICAÇÃO
+    // Define porta da aplicação
     app.set('port', process.env.PORT || config.get('server.port'));
 
-    // MIDDLEWARES
+    // Middleware para JSON
     app.use(bodyParser.json());
 
-    // ENDPOINTS
+    // Módulos da aplicação
     const modules = [
         'users',
     ];
 
-    const loader = consign({ cwd: 'app' });
+    const loader = consign({ cwd: 'app' });  // Inicializa carregamento automático
     
+    // Carrega database, controllers e routes
     modules.forEach(module => {
         loader
             .then(`/${module}/database`)
@@ -26,7 +27,7 @@ module.exports = () => {
             .then(`/${module}/routes`);
     });
 
-    loader.into(app);
+    loader.into(app);  // Injeta módulos no app
 
     return app;
 };

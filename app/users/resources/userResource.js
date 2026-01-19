@@ -1,4 +1,5 @@
 const userResource = (data) => {
+    // Formata um único usuário
     if (!Array.isArray(data)) {
         return {
             id: data.id,
@@ -8,6 +9,7 @@ const userResource = (data) => {
         };
     }
 
+    // Formata lista de usuários
     return {
         data: data.map(d => ({
             id: d.id,

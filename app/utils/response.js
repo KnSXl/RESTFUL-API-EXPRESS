@@ -1,17 +1,17 @@
 /**
- * Padroniza respostas da aplicação
- * @param {Object} res - ...
- * @param {Number} status - Número do status
- * @param {Boolean} success - indica sucesso ou falha
- * @param {String} message - mensagem descritiva
- * @param {Array | Object} data - dados retornados em caso de sucesso
- * @returns {Object} - objeto de resposta formatado
+ * Padroniza respostas HTTP da API.
+ * @param {Object} res - Response do Express
+ * @param {Number} status - Código HTTP
+ * @param {Boolean} success - Indica sucesso ou erro
+ * @param {String} message - Mensagem da resposta
+ * @param {Array|Object} data - Dados retornados (se sucesso)
+ * @returns {Object} JSON da resposta
  */
 const response = ({ res, status, success, message, data }) => {
     res.status(status).json({
-        status: status,
-        success: success,
-        message: message,
+        status,
+        success,
+        message,
         ...(success && { data }),
     });
 };
