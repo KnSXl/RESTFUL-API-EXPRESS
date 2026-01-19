@@ -1,0 +1,353 @@
+[
+    {
+        "name": "User 1",
+        "email": "user1@example.com",
+        "password": "12345678",
+        "id": 1
+    },
+    {
+        "name": "User 2",
+        "email": "user2@example.com",
+        "password": "12345678",
+        "id": 2
+    },
+    {
+        "name": "User3",
+        "email": "user3@example.com",
+        "password": "12345678",
+        "id": 3
+    },
+    {
+        "name": "User4",
+        "email": "user4@example.com",
+        "password": "12345678",
+        "id": 4
+    },
+    {
+        "id": 5
+    },
+    {
+        "id": 6
+    },
+    {
+        "id": 7
+    },
+    {
+        "id": 8
+    },
+    {
+        "id": 9
+    },
+    {
+        "id": 10
+    },
+    {
+        "id": 11
+    },
+    {
+        "id": 12,
+        "password": ""
+    },
+    {
+        "id": 13,
+        "password": "a"
+    },
+    {
+        "id": 14,
+        "password": "a"
+    },
+    {
+        "id": 15,
+        "password": "a"
+    },
+    {
+        "id": 16,
+        "password": "a"
+    },
+    {
+        "id": 17,
+        "password": "a"
+    },
+    {
+        "id": 18,
+        "password": "aaaaaaaa"
+    },
+    {
+        "id": 19,
+        "password": "aaaaaaaa"
+    },
+    {
+        "id": 20,
+        "password": "aaaaaaa"
+    },
+    {
+        "id": 21,
+        "name": "a",
+        "password": "1234567"
+    },
+    {
+        "id": 22,
+        "name": "a",
+        "password": "1234567"
+    },
+    {
+        "id": 23,
+        "name": "a",
+        "password": "1234567"
+    },
+    {
+        "id": 24,
+        "name": "a",
+        "email": "",
+        "password": "1234567"
+    },
+    {
+        "id": 25,
+        "name": "a",
+        "email": "a",
+        "password": "1234567"
+    },
+    {
+        "id": 26,
+        "name": "a",
+        "email": "a",
+        "password": "1234567"
+    },
+    {
+        "id": 27,
+        "name": "a",
+        "email": "a@a.com",
+        "password": "1234567"
+    },
+    {
+        "id": 28,
+        "name": "a",
+        "email": "kaua@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 29,
+        "name": "a",
+        "email": "kaua@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 30,
+        "name": "a",
+        "email": "A",
+        "password": "1234567"
+    },
+    {
+        "id": 31,
+        "name": "a",
+        "email": "A",
+        "password": "1234567"
+    },
+    {
+        "id": 32,
+        "name": "a",
+        "email": "a",
+        "password": "1234567"
+    },
+    {
+        "id": 33,
+        "name": "a",
+        "email": "a@",
+        "password": "1234567"
+    },
+    {
+        "id": 34,
+        "name": "a",
+        "email": "a@a",
+        "password": "1234567"
+    },
+    {
+        "id": 35,
+        "name": "a",
+        "email": "a@a.com",
+        "password": "1234567"
+    },
+    {
+        "id": 36,
+        "name": "a",
+        "email": "a@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 37,
+        "name": "a",
+        "email": "aa@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 38,
+        "name": "a",
+        "email": "aaa@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 39,
+        "name": "a",
+        "email": "aaa@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 40,
+        "name": "a",
+        "email": "aaa@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 41,
+        "name": "a",
+        "email": "kaua@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 42,
+        "name": "a",
+        "email": "kaua@gmail.com.br",
+        "password": "1234567"
+    },
+    {
+        "id": 43,
+        "name": "a",
+        "email": "k",
+        "password": "1234567"
+    },
+    {
+        "id": 44,
+        "name": "a",
+        "email": "k@",
+        "password": "1234567"
+    },
+    {
+        "id": 45,
+        "name": "a",
+        "email": "k@k.com",
+        "password": "1234567"
+    },
+    {
+        "id": 46,
+        "name": "a",
+        "email": "a.c",
+        "password": "1234567"
+    },
+    {
+        "id": 47,
+        "name": "a",
+        "email": "kauasilva@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 48,
+        "name": "a",
+        "email": "kauasilva@gmail.com.br",
+        "password": "1234567"
+    },
+    {
+        "id": 49,
+        "name": "a",
+        "email": "kauasilva@gmail.com.",
+        "password": "1234567"
+    },
+    {
+        "id": 50,
+        "name": "a",
+        "email": "kauasilva@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 51,
+        "name": "Kauã",
+        "email": "kauasilva@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 52,
+        "name": "Kauã",
+        "email": "kauasilva@gmail.com",
+        "password": "1234567"
+    },
+    {
+        "id": 53,
+        "name": "Kauã",
+        "email": "kauasilva@gmail.com",
+        "password": "12345678"
+    },
+    {
+        "id": 54,
+        "name": "Kauã",
+        "email": "kauasilva@gmail.com",
+        "password": "12345678"
+    },
+    {
+        "id": 55,
+        "name": "Kauã",
+        "email": "kauasilva@gmail.com",
+        "password": "12345678"
+    },
+    {
+        "id": 56,
+        "name": "Kauã",
+        "email": "kauasilva@gmail.com",
+        "password": "12345678"
+    },
+    {
+        "id": 57
+    },
+    {
+        "id": 58
+    },
+    {
+        "id": 59
+    },
+    {
+        "id": 60,
+        "name": "Fabiana",
+        "email": "fabiananascimentodasil",
+        "password": "meubebeamoele"
+    },
+    {
+        "id": 61,
+        "name": "Fabiana",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": ""
+    },
+    {
+        "id": 62,
+        "name": "F",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": "meubebeamoele"
+    },
+    {
+        "id": 63,
+        "name": "Fabiana",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": "meubebeamoele"
+    },
+    {
+        "id": 64,
+        "name": "F",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": "meubebeamoele"
+    },
+    {
+        "id": 65,
+        "name": "F",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": "meubebeamoele"
+    },
+    {
+        "id": 66,
+        "name": "Fabi",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": "meubebeamoele"
+    },
+    {
+        "id": 67,
+        "name": "Fab",
+        "email": "fabiananascimentodasilva@gmail.com",
+        "password": "meubebeamoele"
+    }
+]
