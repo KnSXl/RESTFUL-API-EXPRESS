@@ -5,7 +5,7 @@ const userResource = (data) => {
             id: data.id,
             name: data.name,
             email: data.email,
-            password: data.password,
+            // password: data.password,
         };
     }
 
@@ -15,7 +15,7 @@ const userResource = (data) => {
             id: d.id,
             name: d.name,
             email: d.email,
-            password: d.password,
+            // password: d.password,
         }))
     };
 };
