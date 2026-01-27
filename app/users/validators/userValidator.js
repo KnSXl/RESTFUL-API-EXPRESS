@@ -3,10 +3,6 @@ const database = require('../database/userDatabase.json');
 const userValidator = (data, params) => {
     const errors = {};
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-    const { id } = params;
-    console.log(id);
-    
-    
 
     // Validação do nome
     if (!data.name) {
@@ -21,7 +17,7 @@ const userValidator = (data, params) => {
     } else if (
         database.some(user =>
             user.email.toLowerCase() === data.email.toLowerCase() &&  // Verifica se o e-mail já existe
-            user.id !== Number(id)  // Ignora quando é o próprio usuário
+            user.id !== Number(params.id)  // Ignora quando é o próprio usuário
         )
     ) {
         errors.email = ['This email is already in use'];
