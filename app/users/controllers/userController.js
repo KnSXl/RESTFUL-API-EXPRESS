@@ -2,6 +2,7 @@ const save = require('../models/userModel.js');  // Persiste dados no banco
 const response = require('../../utils/response.js');  // Padroniza respostas da API
 const userResource = require('../resources/userResource.js');  // Formata dados do usuário
 const userValidator = require('../validators/userValidator.js');  // Valida dados de entrada
+const searchFilter = require('../../utils/searchFilter.js');  // Filtro de pesquisa
 
 module.exports = (app) => {
     const usersDB = app.users.database.userDatabase;  // Base de dados em memória
@@ -9,16 +10,13 @@ module.exports = (app) => {
 
     // Lista todos os usuários
     controller.listUsers = (req, res) => {
-        const filters = req.query;  // Filtros da query
+        const query = req.query;  // Filtros da query
 
-        // Filtra usuários conforme query informada
-        const filteredUsers = usersDB.filter(user =>
-            Object.entries(filters).every(([key, value]) =>
-                user[key]?.toLowerCase().includes(value.toLowerCase())
-            )
-        );
+        const fields = ['name', 'email'];  // Campos permitidos para filtrar
 
-        res.status(200).json(userResource(filteredUsers));
+        const filteredUsers = searchFilter(usersDB, query, fields);  // Array filtrado
+
+        res.status(200).json(caixaResource(filteredUsers));
     };
 
     // Busca usuário por ID
