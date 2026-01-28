@@ -64,6 +64,7 @@ module.exports = (app) => {
         const { id } = req.params;  // ID da rota
 
         const user = usersDB.find(user => user.id == id);  // Localiza usuário
+        const userIndex = usersDB.findIndex(user => user.id == id);  // Índice no array
 
         // Usuário não encontrado
         if (!user) {
@@ -77,10 +78,18 @@ module.exports = (app) => {
             return res.status(422).json(validation);
         }
 
+        // Atualiza os campos
+        usersDB[userIndex] = {
+            ...usersDB[userIndex],
+            name: req.body.name ?? usersDB[userIndex].name,
+            email: req.body.email ?? usersDB[userIndex].email,
+            password: req.body.password ?? usersDB[userIndex].password,
+        }
+
         save(usersDB);  // Salva alterações
 
         // Retorna sucesso
-        response({ res, status: 200, success: true, message: 'User edited successfully', data: userResource(user) });
+        response({ res, status: 200, success: true, message: 'User edited successfully', data: userResource(usersDB[userIndex]) });
     };
 
     // Remove usuário
