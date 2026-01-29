@@ -16,7 +16,7 @@ module.exports = (app) => {
 
         const filteredUsers = searchFilter(usersDB, query, fields);  // Array filtrado
 
-        res.status(200).json(caixaResource(filteredUsers));
+        res.status(200).json(userResource(filteredUsers));
     };
 
     // Busca usuário por ID
