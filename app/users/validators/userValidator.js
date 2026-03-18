@@ -4,7 +4,7 @@ const userValidator = (data, params) => {
     const errors = {};
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
-    // Valida se existe as chaves
+    // Retorna todos os campos como obrigatórios se nenhum dado for enviado
     if (!data) {
         errors.name = ['The name field is required'];
         errors.email = ['The email field is required'];
