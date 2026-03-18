@@ -4,6 +4,20 @@ const userValidator = (data, params) => {
     const errors = {};
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
+    // Valida se existe as chaves
+    if (!data) {
+        errors.name = ['The name field is required'];
+        errors.email = ['The email field is required'];
+        errors.password = ['The password field is required'];
+
+        // Retorna objeto de erros
+        return {
+            errors: {
+                ...errors,
+            }
+        }
+    }
+
     // Validação do nome
     if (!data.name) {
         errors.name = ['The name field is required'];
